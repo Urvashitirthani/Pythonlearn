@@ -1,5 +1,4 @@
-first_name = input("Enter your first name: ")
-last_name = input("Enter your last name: ")
-
-print("Hello, " + first_name + " " + last_name + "! Welcome to the Python program.")
-
+a = 0  # Initialize a to 0
+for i in range(1, 51):
+    a = a + i  # Add each number from 1 to 50
+print(a)
