@@ -1,30 +1,56 @@
-# Pythonlearn
-# Python Assignment - Tutedude Course
+Pythonlearn
 
-This repository contains my solutions for the first two assignments in the Tutedude Python learning course.
+Python Assignment - Custom Programs
 
-## Task 1: Basic Arithmetic Operations
-This script asks the user to input two numbers and performs the following arithmetic operations:
-- **Addition**: Adds the two numbers.
-- **Subtraction**: Subtracts the second number from the first.
-- **Multiplication**: Multiplies the two numbers.
-- **Division**: Divides the first number by the second, handling division by zero.
+This repository contains my solutions for two Python programs that take input from the user.
 
-### How It Works:
-1. The program prompts the user to enter two numbers.
-2. It then performs and displays the result of each arithmetic operation.
+Task 1: Sum of Numbers from 1 to 50
 
-## Task 2: Personalized Greeting
-This script asks the user to input their first name and last name, then combines these to display a personalized greeting.
+This script calculates the sum of all numbers from 1 to 50 and displays the result.
 
-### How It Works:
-1. The program prompts the user to enter their first name and last name.
-2. It then concatenates the first and last names and prints a message like "Hello, [First Name] [Last Name]! Welcome!"
+How It Works:
 
-## How to Run the Scripts
+1. The program asks the user to confirm if they want to calculate the sum from 1 to 50.
+
+
+2. It then computes the sum and prints the result.
+
+
+
+Task 2: Odd or Even Number Checker
+
+This script checks if a given number is odd or even based on user input.
+
+How It Works:
+
+1. The program prompts the user to enter a number.
+
+
+2. It checks whether the number is odd or even and displays the result accordingly.
+
+
+
+How to Run the Scripts
+
 To run these scripts:
+
 1. Make sure you have Python installed.
+
+
 2. Open a terminal/command prompt.
-3. Use the following commands:
+
+
+3. Use the following commands to run each script:
+
+python sum_1_to_50.py
+
+python odd_or_even.py
+
+
+
+
+Feedback and Contributions
+
+Feel free to open a pull request if you have suggestions for improving the code or adding new features!wing commands:
    - `python Task1.py` to run the first script.
    - `python Task2.py` to run the second script.
