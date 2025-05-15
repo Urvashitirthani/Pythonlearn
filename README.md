@@ -1,12 +1,22 @@
-# Python Programs – Factorial Function and Math Module Operations
+Python Programs: Factorial Function and Math Module Calculations
 
-This repository contains two Python scripts that demonstrate basic mathematical operations using functions and the built-in `math` module in Python.
+This repository contains two Python scripts that demonstrate:
 
-## Task 1 – Factorial Calculation
+- Using a recursive function to calculate the factorial of a number.
+- Performing mathematical operations using Python's built-in `math` module.
 
-This script prompts the user to enter a non-negative integer and calculates the factorial of that number using a recursive function. The result is printed to the console.
+---
 
-### Code Overview:
+## Task 1: Factorial Calculation
+
+This script prompts the user to enter a non-negative integer and calculates its factorial using a recursive function.
+
+### Example
+
+Enter a number: 5
+Factorial of 5 is 120
+
+### Code
 
 ```python
 def factorial(n):
@@ -18,28 +28,28 @@ def factorial(n):
 n = int(input("Enter a number: "))
 print("Factorial of", n, "is", factorial(n))
 
-Example Output:
-
-Enter a number: 5  
-Factorial of 5 is 120
-
 
 ---
 
-## Task 2 – Math Module Operations
+Task 2: Math Module Calculations
 
-This script asks the user to enter a number (integer or float), then uses Python’s math module to calculate:
+This script prompts the user to enter a number and calculates:
 
-The square root
+Square root (math.sqrt)
 
-The natural logarithm
+Natural logarithm (math.log)
 
-The sine of the number (in radians)
+Sine of the number in radians (math.sin)
 
 
-The results are displayed with appropriate labels.
+Example
 
-Code Overview:
+Enter a number: 9  
+Square root : 3.0  
+Logarithms : 2.1972245773362196  
+Sine : 0.4121184852417566
+
+Code
 
 import math
 
@@ -52,24 +62,3 @@ sine_value = math.sin(num)
 print(f"Square root : {sqrt_value}")
 print(f"Logarithms : {log_value}")
 print(f"Sine : {sine_value}")
-
-Example Output:
-
-Enter a number: 9  
-Square root : 3.0  
-Logarithms : 2.1972245773362196  
-Sine : 0.4121184852417566
-
-Note: If the user enters a negative number, the math.sqrt() and math.log() functions may raise errors. Error handling can be added as needed.
-
-
----
-
-How to Run
-
-Make sure you have Python installed. Then, run the scripts from a terminal or code editor:
-
-python task1_factorial.py
-python task2_math_module.py
-
-
