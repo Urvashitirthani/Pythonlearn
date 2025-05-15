@@ -1,64 +1,49 @@
-Python Programs: Factorial Function and Math Module Calculations
+# Python Programs: Factorial and Math Module Calculations
 
-This repository contains two Python scripts that demonstrate:
+This repository contains two Python scripts:
 
-- Using a recursive function to calculate the factorial of a number.
-- Performing mathematical operations using Python's built-in `math` module.
+- **Task 1**: Calculates the factorial of a number using a recursive function.
+- **Task 2**: Uses Python’s `math` module to perform square root, natural logarithm, and sine calculations based on user input.
 
 ---
 
 ## Task 1: Factorial Calculation
 
-This script prompts the user to enter a non-negative integer and calculates its factorial using a recursive function.
+The script asks the user to input a non-negative integer and then calculates its factorial using a user-defined recursive function. The result is displayed in the console.
 
-### Example
+**Example Output:**
 
-Enter a number: 5
-Factorial of 5 is 120
-
-### Code
-
-```python
-def factorial(n):
-    if n < 2:
-        return 1
-    else:
-        return n * factorial(n - 1)
-
-n = int(input("Enter a number: "))
-print("Factorial of", n, "is", factorial(n))
-
+- Input: 5  
+- Output: Factorial of 5 is 120
 
 ---
 
-Task 2: Math Module Calculations
+## Task 2: Math Module Calculations
 
-This script prompts the user to enter a number and calculates:
+This script asks the user to input a number and uses the `math` module to calculate:
 
-Square root (math.sqrt)
+- Square root
+- Natural logarithm
+- Sine (in radians)
 
-Natural logarithm (math.log)
+The results are printed with labels. If the input is negative, the program may raise a `ValueError` for square root and logarithm.
 
-Sine of the number in radians (math.sin)
+**Example Output:**
 
+- Input: 9  
+- Output:  
+  - Square root: 3.0  
+  - Logarithms: 2.19...  
+  - Sine: 0.41...
 
-Example
+---
 
-Enter a number: 9  
-Square root : 3.0  
-Logarithms : 2.1972245773362196  
-Sine : 0.4121184852417566
+## How to Run
 
-Code
+Make sure Python 3 is installed on your system.
 
-import math
+To run the scripts:
 
-num = float(input("Enter a number: "))
-
-sqrt_value = math.sqrt(num)
-log_value = math.log(num)
-sine_value = math.sin(num)
-
-print(f"Square root : {sqrt_value}")
-print(f"Logarithms : {log_value}")
-print(f"Sine : {sine_value}")
+```bash
+python task1_factorial.py
+python task2_math_module.py
