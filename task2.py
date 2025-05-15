@@ -1,5 +1,14 @@
-a = 0  # Initialize a to 0
-for i in range(1, 51):
-    a = a + i  # Add each number from 1 to 50
-print("The sum of numbers from 1 to 50 is: ",a ) 
+import math
 
+# Get user input
+num = float(input("Enter a number: "))
+
+# Calculate the square root, natural logarithm, and sine
+sqrt_value = math.sqrt(num)
+log_value = math.log(num)
+sine_value = math.sin(num)
+
+# Print the results in the specified format
+print(f"Square root : {sqrt_value}")
+print(f"Logarithms : {log_value}")
+print(f"Sine : {sine_value}")
