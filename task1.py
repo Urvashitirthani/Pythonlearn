@@ -1,6 +1,8 @@
-a = int(input("Enter a number: "))
+def factorial(n):
+    if n < 2:
+        return 1
+    else:
+        return n * factorial(n - 1)
 
-if a % 2 == 0:
-    print(a, "is an even number.")
-else:
-    print(a, "is an odd number.")
+n = int(input("Enter a number: "))
+print("Factorial of", n, "is:", factorial(n))
