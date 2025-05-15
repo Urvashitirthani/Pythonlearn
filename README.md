@@ -26,7 +26,7 @@ Factorial of 5 is 120
 
 ---
 
-Task 2 – Math Module Operations
+## Task 2 – Math Module Operations
 
 This script asks the user to enter a number (integer or float), then uses Python’s math module to calculate:
 
