@@ -1,56 +1,75 @@
-Pythonlearn
+# Python Programs – Factorial Function and Math Module Operations
 
-Python Assignment - Custom Programs
+This repository contains two Python scripts that demonstrate basic mathematical operations using functions and the built-in `math` module in Python.
 
-This repository contains my solutions for two Python programs that take input from the user.
+## Task 1 – Factorial Calculation
 
-Task 1: Sum of Numbers from 1 to 50
+This script prompts the user to enter a non-negative integer and calculates the factorial of that number using a recursive function. The result is printed to the console.
 
-This script calculates the sum of all numbers from 1 to 50 and displays the result.
+### Code Overview:
 
-How It Works:
+```python
+def factorial(n):
+    if n < 2:
+        return 1
+    else:
+        return n * factorial(n - 1)
 
-1. The program asks the user to confirm if they want to calculate the sum from 1 to 50.
+n = int(input("Enter a number: "))
+print("Factorial of", n, "is", factorial(n))
 
+Example Output:
 
-2. It then computes the sum and prints the result.
-
-
-
-Task 2: Odd or Even Number Checker
-
-This script checks if a given number is odd or even based on user input.
-
-How It Works:
-
-1. The program prompts the user to enter a number.
+Enter a number: 5  
+Factorial of 5 is 120
 
 
-2. It checks whether the number is odd or even and displays the result accordingly.
+---
+
+Task 2 – Math Module Operations
+
+This script asks the user to enter a number (integer or float), then uses Python’s math module to calculate:
+
+The square root
+
+The natural logarithm
+
+The sine of the number (in radians)
 
 
+The results are displayed with appropriate labels.
 
-How to Run the Scripts
+Code Overview:
 
-To run these scripts:
+import math
 
-1. Make sure you have Python installed.
+num = float(input("Enter a number: "))
+
+sqrt_value = math.sqrt(num)
+log_value = math.log(num)
+sine_value = math.sin(num)
+
+print(f"Square root : {sqrt_value}")
+print(f"Logarithms : {log_value}")
+print(f"Sine : {sine_value}")
+
+Example Output:
+
+Enter a number: 9  
+Square root : 3.0  
+Logarithms : 2.1972245773362196  
+Sine : 0.4121184852417566
+
+Note: If the user enters a negative number, the math.sqrt() and math.log() functions may raise errors. Error handling can be added as needed.
 
 
-2. Open a terminal/command prompt.
+---
+
+How to Run
+
+Make sure you have Python installed. Then, run the scripts from a terminal or code editor:
+
+python task1_factorial.py
+python task2_math_module.py
 
 
-3. Use the following commands to run each script:
-
-python sum_1_to_50.py
-
-python odd_or_even.py
-
-
-
-
-Feedback and Contributions
-
-Feel free to open a pull request if you have suggestions for improving the code or adding new features!wing commands:
-   - `python Task1.py` to run the first script.
-   - `python Task2.py` to run the second script.
