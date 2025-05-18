@@ -1,49 +1,99 @@
-# Python Programs: Factorial and Math Module Calculations
 
-This repository contains two Python scripts:
 
-- **Task 1**: Calculates the factorial of a number using a recursive function.
-- **Task 2**: Uses Python’s `math` module to perform square root, natural logarithm, and sine calculations based on user input.
+File Handling in Python
 
----
+Overview
 
-## Task 1: Factorial Calculation
+This project demonstrates basic file handling operations in Python through two tasks:
 
-The script asks the user to input a non-negative integer and then calculates its factorial using a user-defined recursive function. The result is displayed in the console.
+1. Reading from a File and Handling Errors
 
-**Example Output:**
 
-- Input: 5  
-- Output: Factorial of 5 is 120
+2. Writing to and Appending Data in a File
 
----
 
-## Task 2: Math Module Calculations
 
-This script asks the user to input a number and uses the `math` module to calculate:
+These tasks are designed to help beginners understand how to work with text files in Python, including reading, writing, appending, and handling file-related errors.
 
-- Square root
-- Natural logarithm
-- Sine (in radians)
-
-The results are printed with labels. If the input is negative, the program may raise a `ValueError` for square root and logarithm.
-
-**Example Output:**
-
-- Input: 9  
-- Output:  
-  - Square root: 3.0  
-  - Logarithms: 2.19...  
-  - Sine: 0.41...
 
 ---
 
-## How to Run
+Task 1: Read a File and Handle Errors
 
-Make sure Python 3 is installed on your system.
+Functionality:
 
-To run the scripts:
+Opens and reads a text file named sample.txt.
 
-```bash
-python task1_factorial.py
-python task2_math_module.py
+Prints each line of the file with line numbers.
+
+Gracefully handles the case when the file does not exist, by displaying an error message.
+
+
+Example Output:
+
+If sample.txt exists:
+
+Reading file content:
+Line 1: This is a sample text file.
+Line 2: It contains multiple lines.
+
+If sample.txt does not exist:
+
+Error: The file 'sample.txt' was not found.
+
+
+---
+
+Task 2: Write and Append Data to a File
+
+Functionality:
+
+Takes input from the user and writes it to output.txt.
+
+Appends additional user input to the same file.
+
+Finally reads and displays the content of output.txt.
+
+
+Example Output:
+
+Enter text to write to the file: Hello, Python!
+Data successfully written to output.txt.
+
+Enter additional text to append: Learning file handling in Python.
+Data successfully appended.
+
+Final content of output.txt:
+Hello, Python!
+Learning file handling in Python.
+
+
+---
+
+How to Run
+
+1. Make sure you have Python installed.
+
+
+2. Run the Python files for each task:
+
+python task1.py for reading from file
+
+python task2.py for writing/appending data
+
+
+
+3. Follow the on-screen prompts.
+
+
+
+
+---
+
+Requirements
+
+Python 3.x
+
+No external libraries required
+
+
